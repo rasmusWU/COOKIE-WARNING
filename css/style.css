@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: gainsboro;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    height: 40px;
+    display: flex;
+    background-color: gainsboro;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    background-color: gray;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20%;
+}
+
+main input {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #2f3640;
+    color: #f5f6fa;
+    padding: 24px 32px;
+    transition: 400ms;
+    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.473);
+}
+
+.cookie-container.active {
+    bottom: 0;
+}
+
+.cookie-container p {
+    background-color: #2f3640;
+    padding-bottom: 16px;
+}
+
+.cookie-container a {
+    color: #f5f6fa;
+    background-color: #2f3640;
+}
+
+.cookie-btn, .cookie-btn2 {
+    background: #e84118;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
